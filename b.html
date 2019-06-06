@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ARTHREP</title>
+<style>
+  body
+  {
+    background-color:black;
+    color:#DCDCDC;
+    font-family: "Noto Serif CJK KR"
+  }
+
+  #logo
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 230px;
+  }
+
+  .aimg
+  {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+  }
+
+  .imgswap
+  {
+    float: left;
+    margin-right:10px;
+    margin-top: 400px;
+    margin-bottom: 100px;
+    position:relative;
+    width:250px;
+    height:888px;
+  }
+
+  .imgswap img
+  {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+  .imgswap
+  {
+    width:250px;
+    height:755.09px;
+  }
+
+  .imgswap img {
+    position:absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .imgswap:hover img.normal {
+    opacity: 0;
+  }
+
+  .description:hover
+  {
+    opacity:0;
+    transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    -webkit-transition: opacity .3s ease-out;
+    -o-transition: opacity .3s ease-out;
+  }
+
+ .imp
+  {
+    width: 1050px;
+    margin:0 auto;
+  }
+
+  .cgt2
+  {
+    opacity: 0.8;
+  }
+
+  #tutorial-container {
+    width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #tutorial-container .flip-box {
+    float: left;
+    width: 250px;
+    height: 755.09px;
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3d effect */
+  }
+
+  #tutorial-container .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  #tutorial-container .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg); /* Y축을 기준으로 180도 회전 */
+  }
+
+  #tutorial-container .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  #tutorial-container .flip-box-front {
+    background-color: red;
+    color: black;
+  }
+
+  #tutorial-container .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+</style>
+</head>
+<body>
+  <img id="logo" src="logo.png" width="300">
+
+  <p align="center">
+    저희 아트랩은, 게코류를 입문하시려는 분들께  유용한 홈페이지 입니다.<br>
+    입문하시는 분들께서는 "NOVICE"탭을 누르시면, 다양한 정보가 있으니 많은 이용 부탁드립니다.<br><br>
+    -ARTHREP-
+  </p>
+  <div class="aimg">
+    <div class="imgswap">
+      <img class="colored" src="1c.jpg" width="250px">
+      <img class="normal" src="1n.jpg" width="250px">
+      <div class="description" style="position:absolute; bottom:0; left:0; top:0; right:0;">
+        <div style="position:absolute; bottom:0; left:0; padding:10px">
+          2017-02-18<br>
+          <br>
+          암컷<br>
+          베이비(14g)<br>
+          할리퀸<br>
+        </div>
+      </div>
+    </div>
+    <div class="imgswap" >
+      <img class="colored" src="2c.jpg" width="250px">
+      <img class="normal" src="2n.jpg" width="250px">
+      <div class="description" style="position:absolute; bottom:0; left:0; top:0; right:0;">
+        <div style="position:absolute; bottom:0; left:0; padding:10px">
+          2018-01-13<br>
+          <br>
+          숫컷<br>
+          아성체(22g)<br>
+          트라이컬러 할리퀸<br>
+        </div>
+      </div>
+    </div>
+    <div class="imgswap" >
+      <img class="colored" src="3c.jpg" width="250px">
+      <img class="normal" src="3n.jpg" width="250px">
+      <div class="description" style="position:absolute; bottom:0; left:0; top:0; right:0;">
+        <div style="position:absolute; bottom:0; left:0; padding:10px">
+          2017-06-13<br>
+          <br>
+          암컷<br>
+          성체(35g)<br>
+          익스트림 할리퀸<br>
+        </div>
+      </div>
+    </div>
+    <div class="imgswap" >
+      <img class="colored" src="4c.jpg" width="250px">
+      <img class="normal" src="4n.jpg" width="250px">
+      <div class="description" style="position:absolute; bottom:0; left:0; top:0; right:0;">
+        <div style="position:absolute; bottom:0; left:0; padding:10px">
+          2018-08-03<br>
+          <br>
+          숫컷<br>
+          아성체(19g)<br>
+          아잔틱<br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="imp" align="center">
+    <h1> CRESTED GECKO</h1>
+    <br>
+    <br>
+    <div class="cgt2">
+    학명 : Rhacodactylus siliatus
+    <br>
+    <br>
+    먹이 : 밀웜, 귀뚜라미, 슈퍼푸드
+    <br>
+    평균수명 : 15년~20년
+    <br>
+    사육온도 : 22도~28도
+    <br>
+    습도 : 40%~80%
+  </div>
+  </p>
+  </div>
+  <div id="tutorial-container">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./1c.jpg" style="width:250px;height:755.09px">
+        </div>
+        <div class="flip-box-back">
+          <img src="./2c.jpg" style="width:250px;height:755.09px">
+        </div>
+      </div>
+    </div>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./1c.jpg" style="width:250px;height:755.09px">
+        </div>
+        <div class="flip-box-back">
+          <img src="./2c.jpg" style="width:250px;height:755.09px">
+        </div>
+      </div>
+    </div>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./1c.jpg" style="width:250px;height:755.09px">
+        </div>
+        <div class="flip-box-back">
+          <img src="./2c.jpg" style="width:250px;height:755.09px">
+        </div>
+      </div>
+    </div>
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+          <img src="./1c.jpg" style="width:250px;height:755.09px">
+        </div>
+        <div class="flip-box-back">
+          <img src="./2c.jpg" style="width:250px;height:755.09px">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
